@@ -9,26 +9,35 @@ is on https://www.bjcp.org/.
 
 EK is a stack composed of [Elasticsearch](https://www.elastic.co/products/elastic-stack) and [Kibana](https://www.elastic.co/products/kibana) that provides a way to intropect the Beer Style Guide.
 
-## Requirements
+## Screenshots
+
+The default dashboard with 124 Sub categories of beer:
+![BJCP Analytics](./bjcp-analytics.png)
+
+A filter on `amber-color` and `standard-strength` tags:
+![BJCP Analytics](./bjcp-analytics-amber-standard.png)
+
+## Installation
+### Requirements
 
 You need to install: 
 - [docker](https://docs.docker.com/install/)
 - [docker-compose](https://docs.docker.com/compose/install/)
 
-## Start the EK Stack
+### Start the EK Stack
 
 Open a terminal and run:
 ```bash
 docker-compose up
 ```
 
-## Load the Style Guide into Elasticsearch
+### Load the Style Guide into Elasticsearch
 
 ```bash
 ./load.sh
 ```
 
-## Initialize the Kibana dashboard
+### Initialize the Kibana dashboard
 
 For Mac OS user update your `/etc/hosts` and add the following lines:
 ```bash
@@ -43,11 +52,28 @@ For Mac OS user update your `/etc/hosts` and add the following lines:
 3. Go to the Management tab > Saved Objects > Import the file `./export.json` > Open > Import
    change the index to "bjcp" if necessary > Confirm All changes
 
-4. Go to the dashboard > bjcp > Enjoy
+## Usage
+
+Once the data is imported into Elasticsearch, you can go to the Kibana Dashboard:
+
+http://kibana.docker.localhost
+
+Dashboard > bjcp
+
+From there you can search or filter using the Kibana UI.
+
+The stack can be stopped:
+```bash
+docker-compose down --volume
+```
+And restart:
+```bash
+docker-compose up -d
+```
 
 
 ## Dev
-
+ 
 ### Extract the Styles Guide from JSON to Elasticsearch bulk format
 
 Generate the bjcp-es.json file from the bjcp-2015.json file: 

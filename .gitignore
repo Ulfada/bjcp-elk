@@ -1,0 +1,12 @@
+*~bak
+*-bak
+*.bak
+*~
+
+logs
+*.log
+
+.DS_Store
+data
+.idea
+*.iml
