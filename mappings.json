@@ -1,0 +1,174 @@
+{
+  "properties": {
+    "all_field": {
+      "type": "text",
+      "analyzer": "fulltext"
+    },
+    "appearance": {
+      "type": "text",
+      "copy_to": "all_field",
+      "analyzer": "fulltext"
+    },
+    "aroma": {
+      "type": "text",
+      "copy_to": "all_field",
+      "analyzer": "fulltext"
+    },
+    "characteristic_ingredients": {
+      "type": "text",
+      "copy_to": "all_field",
+      "analyzer": "fulltext"
+    },
+    "comments": {
+      "type": "text",
+      "copy_to": "all_field",
+      "analyzer": "fulltext"
+    },
+    "commercial_examples": {
+      "copy_to": "all_field",
+      "type": "keyword"
+    },
+    "entry_instructions": {
+      "type": "text",
+      "copy_to": "all_field",
+      "analyzer": "fulltext"
+    },
+    "family": {
+      "type": "keyword",
+      "copy_to": "all_field"
+    },
+    "family_history": {
+      "type": "keyword",
+      "copy_to": "all_field"
+    },
+    "flavor": {
+      "type": "text",
+      "analyzer": "fulltext",
+      "copy_to": "all_field"
+    },
+    "history": {
+      "type": "text",
+      "analyzer": "fulltext",
+      "copy_to": "all_field"
+    },
+    "id": {
+      "type": "keyword",
+      "copy_to": "all_field"
+    },
+    "ingredients": {
+      "type": "text",
+      "analyzer": "fulltext",
+      "copy_to": "all_field"
+    },
+    "mouthfeel": {
+      "type": "text",
+      "analyzer": "fulltext",
+      "copy_to": "all_field"
+    },
+    "name": {
+      "type": "keyword",
+      "copy_to": "all_field"
+    },
+    "notes": {
+      "type": "text",
+      "analyzer": "fulltext",
+      "copy_to": "all_field"
+    },
+    "origin": {
+      "type": "keyword",
+      "copy_to": "all_field"
+    },
+    "overall_impression": {
+      "type": "text",
+      "analyzer": "fulltext",
+      "copy_to": "all_field"
+    },
+    "style": {
+      "type": "keyword",
+      "copy_to": "all_field"
+    },
+    "style_comparison": {
+      "type": "text",
+      "analyzer": "fulltext",
+      "copy_to": "all_field"
+    },
+    "vital": {
+      "type": "text",
+      "analyzer": "fulltext",
+      "copy_to": "all_field"
+    },
+    "subcategory": {
+      "type": "keyword",
+      "copy_to": "all_field"
+    },
+    "tags": {
+      "type": "keyword",
+      "copy_to": "all_field"
+    },
+    "alcohol": {
+      "properties": {
+        "avg": {
+          "type": "float"
+        },
+        "max": {
+          "type": "float"
+        },
+        "min": {
+          "type": "float"
+        }
+      }
+    },
+    "bitterness": {
+      "properties": {
+        "avg": {
+          "type": "float"
+        },
+        "max": {
+          "type": "long"
+        },
+        "min": {
+          "type": "long"
+        }
+      }
+    },
+    "color": {
+      "properties": {
+        "avg": {
+          "type": "float"
+        },
+        "max": {
+          "type": "long"
+        },
+        "min": {
+          "type": "long"
+        }
+      }
+    },
+    "original_extract": {
+      "properties": {
+        "avg": {
+          "type": "float"
+        },
+        "max": {
+          "type": "long"
+        },
+        "min": {
+          "type": "long"
+        }
+      }
+    },
+    "terminal_extract": {
+      "properties": {
+        "avg": {
+          "type": "float"
+        },
+        "max": {
+          "type": "long"
+        },
+        "min": {
+          "type": "float"
+        }
+      }
+    }
+  }
+}

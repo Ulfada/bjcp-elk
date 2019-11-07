@@ -1,0 +1,47 @@
+version: "3.5"
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.5.3
+    container_name: elastic
+    hostname: elastic
+    user: ${UID}
+    labels:
+      - "traefik.port=9200"
+      - "traefik.frontend.rule=Host:elastic.docker.localhost"
+    environment:
+      discovery.type: single-node
+      ES_JAVA_OPTS: -Xms384m -Xmx384m
+    volumes:
+      - esdata:/usr/share/elasticsearch/data:rw
+  kibana:
+    image: docker.elastic.co/kibana/kibana-oss:6.5.3
+    container_name: kibana
+    hostname: kibana
+    labels:
+      - "traefik.port=5601"
+      - "traefik.frontend.rule=Host:kibana.docker.localhost"
+    environment:
+      SERVER_NAME: kibana
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+  traefik:
+    image: traefik:maroilles-alpine
+    container_name: traefik
+    command: --api --docker
+    user: root
+    ports:
+      - 80:80
+    labels:
+      - "traefik.port=8080"
+      - "traefik.frontend.rule=Host:traefik.docker.localhost"
+    depends_on:
+      - elasticsearch
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+volumes:
+  esdata:
+    driver_opts:
+      type: none
+      device: $PWD/data/elastic
+      o: bind
