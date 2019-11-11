@@ -30,6 +30,8 @@ Searching for a beer with citrus aroma and low bitterness:
 You need to install: 
 - [docker](https://docs.docker.com/install/)
 - [docker-compose](https://docs.docker.com/compose/install/)
+- curl
+- bash
 
 For Mac OS, you have to update your `/etc/hosts` and add the following lines:
 ```bash
@@ -53,37 +55,28 @@ elastic          | {"type": "server", "timestamp": "2019-11-08T09:06:08,264Z", "
 kibana           | {"type":"log","@timestamp":"2019-11-08T09:06:08Z","tags":["info","http","server","Kibana"],"pid":7,"message":"http server running at http://0:5601"
 ```
 
-### Load the Style Guide into Elasticsearch
+### Import the BJCP Style Guide and the Dashboard
 
-When the stack is started, run the `load.sh` script: 
+When the stack is started, run the `install.sh` script: 
 
 ```bash
-./load.sh
+./install.sh
 ```
-
-### Initialize the Kibana dashboard
-
-1. Open a browser on: http://kibana.docker.localhost/app/kibana#/management/kibana/index_patterns
-  
-   - Click on `Create an index pattern`
-   - Enter index pattern: `bjcp*`
-   - Then `> Next Step` and `> Create index pattern`
-    
-2. Now import the dashboard from the management saved object tab:
-   http://kibana.docker.localhost/app/kibana#/management/kibana/objects
-   
-   - Click on `Import`
-   - Then select the `./export.ndjson` file and `Import`
-   - Change the index to `bjcp*`
-   - Click on `Confirm All changes`
-
-3. Go to the dashboard page and open the `bjcp` dashboard:
-   http://kibana.docker.localhost/app/kibana#/dashboards
-
+You should have:
+```bash
+...
+### Elasticsearch index bjcp provisionned successfully
+### Importing BJCP Kibana dashboard
+### Success, visit: http://kibana.docker.localhost
+```
       
 ## Usage
 
-Once the installation is done, the stack can be stop:
+Once the installation is done you have access to the BJCP Dashboard:
+- http://kibana.docker.localhost/app/kibana#/dashboards
+ 
+ 
+The docker compose stack can be stop:
 ```bash
 docker-compose down --volume
 ```
@@ -109,8 +102,8 @@ The original and terminal extract are in Plato instead of SG.
 
 For now only the subcategories are injected into Elasticsearch, some fields are added:
 
-- vital statistics averages: `alcohol.avg`, `original_extract.avg`, `terminal_extract.avg`, `bitterness.avg`, `color.avg`
-- subcategory names are prefixed with id formatted in sortable way (i.e 1A is rewrittend as 01A) 
+- vital statistics averages: `abv.avg`, `og.avg`, `fg.avg`, `ibu.avg`, `srm.avg`
+- subcategory names are prefixed with id formatted in sortable way (i.e 1A is rewritten as 01A) 
 
  
 ### Extract data from JSON to Elasticsearch bulk format
@@ -118,4 +111,13 @@ For now only the subcategories are injected into Elasticsearch, some fields are 
 Run the python script to generate the `bjcp-es.json` file: 
 ```bash    
 ./extract.py > ./bjcp-es.json
+```
+
+### Export/import the Kibana dashboard
+
+Use the following scripts to export or import your Kibana dashboard:
+
+```bash
+./export-dashboard.sh
+./import-dashboard.sh
 ```
