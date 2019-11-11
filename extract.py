@@ -4,18 +4,18 @@ import json
 
 def dump(id, sub):
     sub['style'] = id
-    subId = sub['id']
-    if subId[0].isdigit() and subId[1].isalpha():
+    sub_id = sub['id']
+    if sub_id[0].isdigit() and sub_id[1].isalpha():
         sub['subcategory'] = "0" + sub['id'] + " " + sub['name']
     else:
         sub['subcategory'] = sub['id'] + " " + sub['name']
     if sub.get('vital_statistics'):
-        calc_avg(sub, 'original_extract')
-        calc_avg(sub, 'terminal_extract')
-        calc_avg(sub, 'alcohol')
-        calc_avg(sub, 'bitterness')
-        calc_avg(sub, 'color')
-        sub['vital'] = "IBU: {}-{}, ABV: {}-{}, SRM: {}-{}, OG: {}-{}, FG: {}-{}".format(sub["bitterness"]["min"], sub["bitterness"]["max"], sub["alcohol"]["min"], sub["alcohol"]["max"], sub["color"]["min"], sub["color"]["max"], sub["original_extract"]["min"], sub["original_extract"]["max"], sub["terminal_extract"]["min"], sub["terminal_extract"]["max"])
+        calc_avg(sub, 'original_extract', 'og')
+        calc_avg(sub, 'terminal_extract', 'fg')
+        calc_avg(sub, 'alcohol', 'abv')
+        calc_avg(sub, 'bitterness', 'ibu')
+        calc_avg(sub, 'color', 'srm')
+        sub['vital'] = "IBU: {}-{}, ABV: {}-{}, SRM: {}-{}, OG: {}-{}, FG: {}-{}".format(sub["ibu"]["min"], sub["ibu"]["max"], sub["abv"]["min"], sub["abv"]["max"], sub["srm"]["min"], sub["srm"]["max"], sub["og"]["min"], sub["og"]["max"], sub["fg"]["min"], sub["fg"]["max"])
         del sub['vital_statistics']
     if sub.get('color_classifications'):
         del sub['color_classifications']
@@ -25,13 +25,14 @@ def dump(id, sub):
         for subsub in sub['styles']:
             dump(id, subsub)
     else:
-        print '{"index":{}}'
-        print json.dumps(sub)
-    
-def calc_avg(sub, item):
+        print('{"index":{}}')
+        print(json.dumps(sub))
+
+def calc_avg(sub, item, rename):
     sub[item] = sub['vital_statistics'][item]
     sub[item]['avg'] = float(format( (float(sub[item]['max']) + float(sub[item]['min']))/2, '.1f'))
-
+    sub[rename] = sub[item]
+    del sub[item]
 
 def parse():
     with open('bjcp-2015.json') as json_file:
