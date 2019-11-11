@@ -1,571 +1,490 @@
 {
+  "version": "7.4.2",
   "objects": [
-{
-  "attributes": {
-    "fields": "[{\"name\":\"_id\",\"type\":\"string\",\"esTypes\":[\"_id\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_index\",\"type\":\"string\",\"esTypes\":[\"_index\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_source\",\"type\":\"_source\",\"esTypes\":[\"_source\"],\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_type\",\"type\":\"string\",\"esTypes\":[\"_type\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"abv.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"abv.max\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"abv.min\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"all_field\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"appearance\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"aroma\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"ibu.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"ibu.max\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"ibu.min\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"characteristic_ingredients\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"srm.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"srm.max\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"srm.min\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"comments\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"commercial_examples\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"entry_instructions\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"family\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"family_history\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"flavor\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"history\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"id\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"ingredients\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"mouthfeel\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"name\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"notes\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"origin\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"og.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"og.max\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"og.min\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"overall_impression\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"style\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"style_comparison\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"subcategory\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"tags\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"fg.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"fg.max\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"fg.min\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"vital\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false}]",
-    "title": "bjcp*"
-  },
-  "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-  "migrationVersion": {
-    "index-pattern": "6.5.0"
-  },
-  "references": [],
-  "type": "index-pattern",
-  "updated_at": "2019-11-08T09:16:18.110Z",
-  "version": "WzMsMV0="
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "Tags",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"Tags\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":11,\"maxFontSize\":28,\"showLabel\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"tags\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":15,\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Tags\"}}]}"
-  },
-  "id": "4b1fbaa0-006c-11ea-932d-092d2997e124",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
     {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T09:18:24.994Z",
-  "version": "WzUsMV0="
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+      "id": "0d040ef0-0068-11ea-932d-092d2997e124",
+      "type": "dashboard",
+      "updated_at": "2019-11-11T11:27:09.605Z",
+      "version": "WzE5LDFd",
+      "attributes": {
+        "title": "bjcp",
+        "hits": 0,
+        "description": "",
+        "panelsJSON": "[{\"version\":\"7.4.2\",\"gridData\":{\"x\":30,\"y\":0,\"w\":12,\"h\":10,\"i\":\"2\"},\"panelIndex\":\"2\",\"embeddableConfig\":{},\"panelRefName\":\"panel_0\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":0,\"y\":10,\"w\":10,\"h\":10,\"i\":\"3\"},\"panelIndex\":\"3\",\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 0.9\":\"rgb(255,245,240)\",\"0.9 - 1.8\":\"rgb(254,228,216)\",\"1.8 - 2.7\":\"rgb(253,202,181)\",\"2.7 - 3.6\":\"rgb(252,171,142)\",\"3.6 - 4.5\":\"rgb(252,138,106)\",\"4.5 - 5.4\":\"rgb(251,106,74)\",\"5.4 - 6.3\":\"rgb(241,68,50)\",\"6.3 - 7.2\":\"rgb(217,38,35)\",\"7.2 - 8.1\":\"rgb(188,20,26)\",\"8.1 - 9\":\"rgb(152,12,19)\"},\"legendOpen\":false}},\"panelRefName\":\"panel_1\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":20,\"y\":10,\"w\":10,\"h\":10,\"i\":\"5\"},\"panelIndex\":\"5\",\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 0.8\":\"rgb(255,245,240)\",\"0.8 - 1.6\":\"rgb(254,228,216)\",\"1.6 - 2.4\":\"rgb(253,202,181)\",\"2.4 - 3.2\":\"rgb(252,171,142)\",\"3.2 - 4\":\"rgb(252,138,106)\",\"4 - 4.8\":\"rgb(251,106,74)\",\"4.8 - 5.6\":\"rgb(241,68,50)\",\"5.6 - 6.4\":\"rgb(217,38,35)\",\"6.4 - 7.2\":\"rgb(188,20,26)\",\"7.2 - 8\":\"rgb(152,12,19)\"},\"legendOpen\":false}},\"panelRefName\":\"panel_2\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":30,\"y\":10,\"w\":12,\"h\":10,\"i\":\"6\"},\"panelIndex\":\"6\",\"embeddableConfig\":{\"title\":\"\"},\"panelRefName\":\"panel_3\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":10,\"y\":10,\"w\":10,\"h\":10,\"i\":\"7\"},\"panelIndex\":\"7\",\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 0.7\":\"rgb(255,245,240)\",\"0.7 - 1.4\":\"rgb(254,228,216)\",\"1.4 - 2.1\":\"rgb(253,202,181)\",\"2.1 - 2.8\":\"rgb(252,171,142)\",\"2.8 - 3.5\":\"rgb(252,138,106)\",\"3.5 - 4.2\":\"rgb(251,106,74)\",\"4.2 - 4.9\":\"rgb(241,68,50)\",\"4.9 - 5.6\":\"rgb(217,38,35)\",\"5.6 - 6.3\":\"rgb(188,20,26)\",\"6.3 - 7\":\"rgb(152,12,19)\"},\"legendOpen\":false}},\"panelRefName\":\"panel_4\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":10,\"y\":0,\"w\":10,\"h\":10,\"i\":\"9\"},\"panelIndex\":\"9\",\"embeddableConfig\":{},\"panelRefName\":\"panel_5\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":20,\"y\":0,\"w\":10,\"h\":10,\"i\":\"11\"},\"panelIndex\":\"11\",\"embeddableConfig\":{},\"panelRefName\":\"panel_6\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":0,\"y\":0,\"w\":10,\"h\":10,\"i\":\"12\"},\"panelIndex\":\"12\",\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"panelRefName\":\"panel_7\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":42,\"y\":0,\"w\":5,\"h\":4,\"i\":\"f72ad352-24e6-4e46-9814-689a7b7900f5\"},\"panelIndex\":\"f72ad352-24e6-4e46-9814-689a7b7900f5\",\"embeddableConfig\":{},\"panelRefName\":\"panel_8\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":42,\"y\":4,\"w\":5,\"h\":4,\"i\":\"6a6fd20d-ba0e-4a68-b2de-1f733f56b4a7\"},\"panelIndex\":\"6a6fd20d-ba0e-4a68-b2de-1f733f56b4a7\",\"embeddableConfig\":{},\"panelRefName\":\"panel_9\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":42,\"y\":16,\"w\":5,\"h\":4,\"i\":\"c3897040-5510-4c87-96e7-82c3803ba778\"},\"panelIndex\":\"c3897040-5510-4c87-96e7-82c3803ba778\",\"embeddableConfig\":{},\"panelRefName\":\"panel_10\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":42,\"y\":8,\"w\":5,\"h\":4,\"i\":\"2adf3e0b-fc38-4416-8c51-846553eef21f\"},\"panelIndex\":\"2adf3e0b-fc38-4416-8c51-846553eef21f\",\"embeddableConfig\":{},\"panelRefName\":\"panel_11\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":42,\"y\":12,\"w\":5,\"h\":4,\"i\":\"3f2c134b-7c14-4093-9f41-fa072504595b\"},\"panelIndex\":\"3f2c134b-7c14-4093-9f41-fa072504595b\",\"embeddableConfig\":{},\"panelRefName\":\"panel_12\"},{\"version\":\"7.4.2\",\"gridData\":{\"x\":0,\"y\":20,\"w\":47,\"h\":12,\"i\":\"2202d25e-b746-49f7-98a0-c71555d149f6\"},\"panelIndex\":\"2202d25e-b746-49f7-98a0-c71555d149f6\",\"embeddableConfig\":{\"sort\":[[\"abv.avg\",\"desc\"]],\"title\":\"\",\"columns\":[\"subcategory\",\"srm.avg\",\"ibu.avg\",\"og.avg\",\"fg.avg\",\"abv.avg\",\"vital\"]},\"panelRefName\":\"panel_13\"}]",
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+        "version": 1,
+        "timeRestore": false,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
+        }
+      },
+      "references": [
+        {
+          "name": "panel_0",
+          "type": "visualization",
+          "id": "4b1fbaa0-006c-11ea-932d-092d2997e124"
+        },
+        {
+          "name": "panel_1",
+          "type": "visualization",
+          "id": "d3112460-006e-11ea-932d-092d2997e124"
+        },
+        {
+          "name": "panel_2",
+          "type": "visualization",
+          "id": "b505d7c0-0089-11ea-932d-092d2997e124"
+        },
+        {
+          "name": "panel_3",
+          "type": "visualization",
+          "id": "bc0491b0-0093-11ea-932d-092d2997e124"
+        },
+        {
+          "name": "panel_4",
+          "type": "visualization",
+          "id": "93da6160-008e-11ea-932d-092d2997e124"
+        },
+        {
+          "name": "panel_5",
+          "type": "visualization",
+          "id": "16e8c030-0182-11ea-b377-bfbc3ca49801"
+        },
+        {
+          "name": "panel_6",
+          "type": "visualization",
+          "id": "64c24150-0182-11ea-b377-bfbc3ca49801"
+        },
+        {
+          "name": "panel_7",
+          "type": "visualization",
+          "id": "daa45dd0-0183-11ea-b377-bfbc3ca49801"
+        },
+        {
+          "name": "panel_8",
+          "type": "visualization",
+          "id": "624ce400-0210-11ea-b900-1722e4fc2b91"
+        },
+        {
+          "name": "panel_9",
+          "type": "visualization",
+          "id": "ccd09c50-020f-11ea-b900-1722e4fc2b91"
+        },
+        {
+          "name": "panel_10",
+          "type": "visualization",
+          "id": "da269220-020e-11ea-b900-1722e4fc2b91"
+        },
+        {
+          "name": "panel_11",
+          "type": "visualization",
+          "id": "e2481ad0-0210-11ea-b900-1722e4fc2b91"
+        },
+        {
+          "name": "panel_12",
+          "type": "visualization",
+          "id": "13d3ab00-0211-11ea-b900-1722e4fc2b91"
+        },
+        {
+          "name": "panel_13",
+          "type": "search",
+          "id": "0a06f000-0072-11ea-932d-092d2997e124"
+        }
+      ],
+      "migrationVersion": {
+        "dashboard": "7.3.0"
+      }
     },
-    "title": "ABV vs SRM",
-    "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 0.9\":\"rgb(255,245,240)\",\"0.9 - 1.8\":\"rgb(254,228,216)\",\"1.8 - 2.7\":\"rgb(253,202,181)\",\"2.7 - 3.6\":\"rgb(252,171,142)\",\"3.6 - 4.5\":\"rgb(252,138,106)\",\"4.5 - 5.4\":\"rgb(251,106,74)\",\"5.4 - 6.3\":\"rgb(241,68,50)\",\"6.3 - 7.2\":\"rgb(217,38,35)\",\"7.2 - 8.1\":\"rgb(188,20,26)\",\"8.1 - 9\":\"rgb(152,12,19)\"}}}",
-    "version": 1,
-    "visState": "{\"title\":\"ABV vs SRM\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}],\"dimensions\":{\"x\":{\"accessor\":0,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"},\"y\":[{\"accessor\":2,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"series\":[{\"accessor\":1,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"}]}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"abv.avg\",\"ranges\":[{\"from\":0,\"to\":3},{\"from\":3,\"to\":4},{\"from\":4,\"to\":4.5},{\"from\":4.5,\"to\":5},{\"from\":5,\"to\":6},{\"from\":6,\"to\":7},{\"from\":7,\"to\":8},{\"from\":8}],\"customLabel\":\"%ABV\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"srm.avg\",\"ranges\":[{\"from\":35,\"to\":null},{\"from\":30,\"to\":35},{\"from\":22,\"to\":30},{\"from\":19,\"to\":22},{\"from\":17,\"to\":19},{\"from\":14,\"to\":17},{\"from\":10,\"to\":14},{\"from\":6,\"to\":10},{\"to\":6,\"from\":4},{\"from\":3,\"to\":4},{\"from\":0,\"to\":3}],\"customLabel\":\"SRM\"}}]}"
-  },
-  "id": "d3112460-006e-11ea-932d-092d2997e124",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T09:18:24.994Z",
-  "version": "WzYsMV0="
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "IBU vs FG",
-    "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 0.9\":\"rgb(255,245,240)\",\"0.9 - 1.8\":\"rgb(254,228,216)\",\"1.8 - 2.7\":\"rgb(253,202,181)\",\"2.7 - 3.6\":\"rgb(252,171,142)\",\"3.6 - 4.5\":\"rgb(252,138,106)\",\"4.5 - 5.4\":\"rgb(251,106,74)\",\"5.4 - 6.3\":\"rgb(241,68,50)\",\"6.3 - 7.2\":\"rgb(217,38,35)\",\"7.2 - 8.1\":\"rgb(188,20,26)\",\"8.1 - 9\":\"rgb(152,12,19)\"}}}",
-    "version": 1,
-    "visState": "{\"title\":\"IBU vs FG\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}],\"dimensions\":{\"x\":{\"accessor\":0,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"},\"y\":[{\"accessor\":2,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"series\":[{\"accessor\":1,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"}]}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"ibu.avg\",\"ranges\":[{\"from\":0,\"to\":10},{\"from\":10,\"to\":20},{\"from\":20,\"to\":25},{\"from\":25,\"to\":30},{\"from\":30,\"to\":40},{\"from\":40,\"to\":50},{\"from\":50,\"to\":60},{\"from\":60,\"to\":null}],\"customLabel\":\"IBU\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"fg.avg\",\"ranges\":[{\"from\":5,\"to\":null},{\"from\":4,\"to\":5},{\"from\":3,\"to\":4},{\"from\":2,\"to\":3},{\"from\":1,\"to\":2},{\"from\":0,\"to\":1}],\"customLabel\":\"FG\"}}]}"
-  },
-  "id": "b505d7c0-0089-11ea-932d-092d2997e124",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T09:18:24.994Z",
-  "version": "WzcsMV0="
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "Commercial Examples",
-    "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
-    "version": 1,
-    "visState": "{\"title\":\"Commercial Examples\",\"type\":\"table\",\"params\":{\"perPage\":7,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"percentageCol\":\"\",\"dimensions\":{\"metrics\":[{\"accessor\":1,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"buckets\":[{\"accessor\":0,\"format\":{\"id\":\"terms\",\"params\":{\"id\":\"string\",\"otherBucketLabel\":\"Other\",\"missingBucketLabel\":\"Missing\"}},\"params\":{},\"aggType\":\"terms\"}]}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"commercial_examples\",\"orderBy\":\"_key\",\"order\":\"asc\",\"size\":6,\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Commercial examples\"}}]}"
-  },
-  "id": "bc0491b0-0093-11ea-932d-092d2997e124",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T09:18:24.994Z",
-  "version": "WzgsMV0="
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "IBU vs OG",
-    "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 0.8\":\"rgb(255,245,240)\",\"0.8 - 1.6\":\"rgb(254,228,216)\",\"1.6 - 2.4\":\"rgb(253,202,181)\",\"2.4 - 3.2\":\"rgb(252,171,142)\",\"3.2 - 4\":\"rgb(252,138,106)\",\"4 - 4.8\":\"rgb(251,106,74)\",\"4.8 - 5.6\":\"rgb(241,68,50)\",\"5.6 - 6.4\":\"rgb(217,38,35)\",\"6.4 - 7.2\":\"rgb(188,20,26)\",\"7.2 - 8\":\"rgb(152,12,19)\"}}}",
-    "version": 1,
-    "visState": "{\"title\":\"IBU vs OG\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}],\"dimensions\":{\"x\":{\"accessor\":0,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"},\"y\":[{\"accessor\":2,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"series\":[{\"accessor\":1,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"}]}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"ibu.avg\",\"ranges\":[{\"from\":0,\"to\":10},{\"from\":10,\"to\":20},{\"from\":20,\"to\":25},{\"from\":25,\"to\":30},{\"from\":30,\"to\":40},{\"from\":40,\"to\":50},{\"from\":50,\"to\":60},{\"from\":60}],\"customLabel\":\"IBU\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"og.avg\",\"ranges\":[{\"from\":17,\"to\":null},{\"from\":16,\"to\":17},{\"from\":15,\"to\":16},{\"from\":14,\"to\":15},{\"from\":13,\"to\":14},{\"from\":12,\"to\":13},{\"from\":10,\"to\":12},{\"to\":10,\"from\":0}],\"customLabel\":\"OG\"}}]}"
-  },
-  "id": "93da6160-008e-11ea-932d-092d2997e124",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T09:18:24.994Z",
-  "version": "WzksMV0="
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "Family",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"Family\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":10,\"maxFontSize\":25,\"showLabel\":false,\"metric\":{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"string\",\"params\":{}}},\"bucket\":{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"terms\",\"params\":{\"id\":\"string\",\"otherBucketLabel\":\"Other\",\"missingBucketLabel\":\"Missing\"}}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"family\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":10,\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Family\"}}]}"
-  },
-  "id": "16e8c030-0182-11ea-b377-bfbc3ca49801",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T12:17:57.715Z",
-  "version": "WzU0LDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "History",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"History\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":10,\"maxFontSize\":25,\"showLabel\":false,\"metric\":{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"string\",\"params\":{}}},\"bucket\":{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"terms\",\"params\":{\"id\":\"string\",\"otherBucketLabel\":\"Other\",\"missingBucketLabel\":\"Missing\"}}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"family_history\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":10,\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"\"}}]}"
-  },
-  "id": "64c24150-0182-11ea-b377-bfbc3ca49801",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T12:17:26.055Z",
-  "version": "WzUyLDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "Origin",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"Origin\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":false,\"last_level\":false,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"origin\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":10,\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
-  },
-  "id": "daa45dd0-0183-11ea-b377-bfbc3ca49801",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T09:18:24.994Z",
-  "version": "WzEyLDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "SRM",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"SRM\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":40}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":18}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"number\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"number\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"srm.min\",\"customLabel\":\"min\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"srm.max\",\"customLabel\":\"max\"}}]}"
-  },
-  "id": "624ce400-0210-11ea-b900-1722e4fc2b91",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T10:13:18.016Z",
-  "version": "WzM4LDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "ABV",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"ABV\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":12}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":18}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"number\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"number\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"abv.min\",\"customLabel\":\"min\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"abv.max\",\"customLabel\":\"max\"}}]}"
-  },
-  "id": "da269220-020e-11ea-b900-1722e4fc2b91",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T10:10:41.143Z",
-  "version": "WzMzLDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "IBU",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"IBU\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":120}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":18}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"number\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"number\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"ibu.min\",\"customLabel\":\"min\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"ibu.max\",\"customLabel\":\"max\"}}]}"
-  },
-  "id": "ccd09c50-020f-11ea-b900-1722e4fc2b91",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T10:11:06.577Z",
-  "version": "WzM1LDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "OG",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"OG\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":30}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":18}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"percent\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"percent\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"og.min\",\"customLabel\":\"min\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"og.max\",\"customLabel\":\"max\"}}]}"
-  },
-  "id": "e2481ad0-0210-11ea-b900-1722e4fc2b91",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T10:22:14.766Z",
-  "version": "WzQ1LDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "FG",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"FG\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":10}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":16}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"number\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"number\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"fg.min\",\"customLabel\":\"min\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"fg.max\",\"customLabel\":\"max\"}}]}"
-  },
-  "id": "13d3ab00-0211-11ea-b900-1722e4fc2b91",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T13:55:27.796Z",
-  "version": "WzYxLDFd"
-},
-{
-  "attributes": {
-    "columns": [
-      "subcategory",
-      "srm.avg",
-      "abv.avg",
-      "ibu.avg",
-      "og.avg",
-      "fg.avg",
-      "vital"
-    ],
-    "description": "",
-    "hits": 0,
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "sort": [
-      [
-        "fg.avg",
-        "desc"
-      ]
-    ],
-    "title": "Search",
-    "version": 1
-  },
-  "id": "0a06f000-0072-11ea-932d-092d2997e124",
-  "migrationVersion": {
-    "search": "7.4.0"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "search",
-  "updated_at": "2019-11-08T09:18:24.994Z",
-  "version": "WzQsMV0="
-},
-{
-  "attributes": {
-    "description": "",
-    "hits": 0,
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[]}"
-    },
-    "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
-    "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"h\":10,\"i\":\"2\",\"w\":12,\"x\":30,\"y\":0},\"panelIndex\":\"2\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_0\"},{\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 0.9\":\"rgb(255,245,240)\",\"0.9 - 1.8\":\"rgb(254,228,216)\",\"1.8 - 2.7\":\"rgb(253,202,181)\",\"2.7 - 3.6\":\"rgb(252,171,142)\",\"3.6 - 4.5\":\"rgb(252,138,106)\",\"4.5 - 5.4\":\"rgb(251,106,74)\",\"5.4 - 6.3\":\"rgb(241,68,50)\",\"6.3 - 7.2\":\"rgb(217,38,35)\",\"7.2 - 8.1\":\"rgb(188,20,26)\",\"8.1 - 9\":\"rgb(152,12,19)\"},\"legendOpen\":false}},\"gridData\":{\"h\":10,\"i\":\"3\",\"w\":10,\"x\":0,\"y\":10},\"panelIndex\":\"3\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_1\"},{\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 0.8\":\"rgb(255,245,240)\",\"0.8 - 1.6\":\"rgb(254,228,216)\",\"1.6 - 2.4\":\"rgb(253,202,181)\",\"2.4 - 3.2\":\"rgb(252,171,142)\",\"3.2 - 4\":\"rgb(252,138,106)\",\"4 - 4.8\":\"rgb(251,106,74)\",\"4.8 - 5.6\":\"rgb(241,68,50)\",\"5.6 - 6.4\":\"rgb(217,38,35)\",\"6.4 - 7.2\":\"rgb(188,20,26)\",\"7.2 - 8\":\"rgb(152,12,19)\"},\"legendOpen\":false}},\"gridData\":{\"h\":10,\"i\":\"5\",\"w\":10,\"x\":20,\"y\":10},\"panelIndex\":\"5\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_2\"},{\"embeddableConfig\":{\"title\":\"\"},\"gridData\":{\"h\":10,\"i\":\"6\",\"w\":12,\"x\":30,\"y\":10},\"panelIndex\":\"6\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_3\"},{\"embeddableConfig\":{\"vis\":{\"defaultColors\":{\"0 - 0.7\":\"rgb(255,245,240)\",\"0.7 - 1.4\":\"rgb(254,228,216)\",\"1.4 - 2.1\":\"rgb(253,202,181)\",\"2.1 - 2.8\":\"rgb(252,171,142)\",\"2.8 - 3.5\":\"rgb(252,138,106)\",\"3.5 - 4.2\":\"rgb(251,106,74)\",\"4.2 - 4.9\":\"rgb(241,68,50)\",\"4.9 - 5.6\":\"rgb(217,38,35)\",\"5.6 - 6.3\":\"rgb(188,20,26)\",\"6.3 - 7\":\"rgb(152,12,19)\"},\"legendOpen\":false}},\"gridData\":{\"h\":10,\"i\":\"7\",\"w\":10,\"x\":10,\"y\":10},\"panelIndex\":\"7\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_4\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":10,\"i\":\"9\",\"w\":10,\"x\":10,\"y\":0},\"panelIndex\":\"9\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_5\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":10,\"i\":\"11\",\"w\":10,\"x\":20,\"y\":0},\"panelIndex\":\"11\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_6\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"h\":10,\"i\":\"12\",\"w\":10,\"x\":0,\"y\":0},\"panelIndex\":\"12\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_7\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":4,\"i\":\"f72ad352-24e6-4e46-9814-689a7b7900f5\",\"w\":5,\"x\":42,\"y\":0},\"panelIndex\":\"f72ad352-24e6-4e46-9814-689a7b7900f5\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_8\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":4,\"i\":\"c3897040-5510-4c87-96e7-82c3803ba778\",\"w\":5,\"x\":42,\"y\":8},\"panelIndex\":\"c3897040-5510-4c87-96e7-82c3803ba778\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_9\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":4,\"i\":\"6a6fd20d-ba0e-4a68-b2de-1f733f56b4a7\",\"w\":5,\"x\":42,\"y\":4},\"panelIndex\":\"6a6fd20d-ba0e-4a68-b2de-1f733f56b4a7\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_10\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":4,\"i\":\"2adf3e0b-fc38-4416-8c51-846553eef21f\",\"w\":5,\"x\":42,\"y\":12},\"panelIndex\":\"2adf3e0b-fc38-4416-8c51-846553eef21f\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_11\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":4,\"i\":\"3f2c134b-7c14-4093-9f41-fa072504595b\",\"w\":5,\"x\":42,\"y\":16},\"panelIndex\":\"3f2c134b-7c14-4093-9f41-fa072504595b\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_12\"},{\"embeddableConfig\":{\"sort\":[[\"abv.avg\",\"desc\"]],\"title\":\"\"},\"gridData\":{\"h\":12,\"i\":\"2202d25e-b746-49f7-98a0-c71555d149f6\",\"w\":47,\"x\":0,\"y\":20},\"panelIndex\":\"2202d25e-b746-49f7-98a0-c71555d149f6\",\"version\":\"7.4.2\",\"panelRefName\":\"panel_13\"}]",
-    "timeRestore": false,
-    "title": "bjcp",
-    "version": 1
-  },
-  "id": "0d040ef0-0068-11ea-932d-092d2997e124",
-  "migrationVersion": {
-    "dashboard": "7.3.0"
-  },
-  "references": [
     {
       "id": "4b1fbaa0-006c-11ea-932d-092d2997e124",
-      "name": "panel_0",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzEsMV0=",
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "title": "Tags",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"Tags\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":11,\"maxFontSize\":28,\"showLabel\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"tags\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":15,\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Tags\"}}]}"
+      },
+      "references": [
+        {
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "d3112460-006e-11ea-932d-092d2997e124",
-      "name": "panel_1",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzIsMV0=",
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "title": "ABV vs SRM",
+        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 0.9\":\"rgb(255,245,240)\",\"0.9 - 1.8\":\"rgb(254,228,216)\",\"1.8 - 2.7\":\"rgb(253,202,181)\",\"2.7 - 3.6\":\"rgb(252,171,142)\",\"3.6 - 4.5\":\"rgb(252,138,106)\",\"4.5 - 5.4\":\"rgb(251,106,74)\",\"5.4 - 6.3\":\"rgb(241,68,50)\",\"6.3 - 7.2\":\"rgb(217,38,35)\",\"7.2 - 8.1\":\"rgb(188,20,26)\",\"8.1 - 9\":\"rgb(152,12,19)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"ABV vs SRM\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}],\"dimensions\":{\"x\":{\"accessor\":0,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"},\"y\":[{\"accessor\":2,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"series\":[{\"accessor\":1,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"}]}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"abv.avg\",\"ranges\":[{\"from\":0,\"to\":3},{\"from\":3,\"to\":4},{\"from\":4,\"to\":4.5},{\"from\":4.5,\"to\":5},{\"from\":5,\"to\":6},{\"from\":6,\"to\":7},{\"from\":7,\"to\":8},{\"from\":8}],\"customLabel\":\"%ABV\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"srm.avg\",\"ranges\":[{\"from\":35,\"to\":null},{\"from\":30,\"to\":35},{\"from\":22,\"to\":30},{\"from\":19,\"to\":22},{\"from\":17,\"to\":19},{\"from\":14,\"to\":17},{\"from\":10,\"to\":14},{\"from\":6,\"to\":10},{\"to\":6,\"from\":4},{\"from\":3,\"to\":4},{\"from\":0,\"to\":3}],\"customLabel\":\"SRM\"}}]}"
+      },
+      "references": [
+        {
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "b505d7c0-0089-11ea-932d-092d2997e124",
-      "name": "panel_2",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzMsMV0=",
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "title": "IBU vs FG",
+        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 0.9\":\"rgb(255,245,240)\",\"0.9 - 1.8\":\"rgb(254,228,216)\",\"1.8 - 2.7\":\"rgb(253,202,181)\",\"2.7 - 3.6\":\"rgb(252,171,142)\",\"3.6 - 4.5\":\"rgb(252,138,106)\",\"4.5 - 5.4\":\"rgb(251,106,74)\",\"5.4 - 6.3\":\"rgb(241,68,50)\",\"6.3 - 7.2\":\"rgb(217,38,35)\",\"7.2 - 8.1\":\"rgb(188,20,26)\",\"8.1 - 9\":\"rgb(152,12,19)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"IBU vs FG\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}],\"dimensions\":{\"x\":{\"accessor\":0,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"},\"y\":[{\"accessor\":2,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"series\":[{\"accessor\":1,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"}]}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"ibu.avg\",\"ranges\":[{\"from\":0,\"to\":10},{\"from\":10,\"to\":20},{\"from\":20,\"to\":25},{\"from\":25,\"to\":30},{\"from\":30,\"to\":40},{\"from\":40,\"to\":50},{\"from\":50,\"to\":60},{\"from\":60,\"to\":null}],\"customLabel\":\"IBU\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"fg.avg\",\"ranges\":[{\"from\":5,\"to\":null},{\"from\":4,\"to\":5},{\"from\":3,\"to\":4},{\"from\":2,\"to\":3},{\"from\":1,\"to\":2},{\"from\":0,\"to\":1}],\"customLabel\":\"FG\"}}]}"
+      },
+      "references": [
+        {
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "bc0491b0-0093-11ea-932d-092d2997e124",
-      "name": "panel_3",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzQsMV0=",
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "title": "Commercial Examples",
+        "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+        "version": 1,
+        "visState": "{\"title\":\"Commercial Examples\",\"type\":\"table\",\"params\":{\"perPage\":7,\"showPartialRows\":false,\"showMetricsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\",\"percentageCol\":\"\",\"dimensions\":{\"metrics\":[{\"accessor\":1,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"buckets\":[{\"accessor\":0,\"format\":{\"id\":\"terms\",\"params\":{\"id\":\"string\",\"otherBucketLabel\":\"Other\",\"missingBucketLabel\":\"Missing\"}},\"params\":{},\"aggType\":\"terms\"}]}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"commercial_examples\",\"orderBy\":\"_key\",\"order\":\"asc\",\"size\":6,\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Commercial examples\"}}]}"
+      },
+      "references": [
+        {
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "93da6160-008e-11ea-932d-092d2997e124",
-      "name": "panel_4",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzUsMV0=",
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "title": "IBU vs OG",
+        "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 0.8\":\"rgb(255,245,240)\",\"0.8 - 1.6\":\"rgb(254,228,216)\",\"1.6 - 2.4\":\"rgb(253,202,181)\",\"2.4 - 3.2\":\"rgb(252,171,142)\",\"3.2 - 4\":\"rgb(252,138,106)\",\"4 - 4.8\":\"rgb(251,106,74)\",\"4.8 - 5.6\":\"rgb(241,68,50)\",\"5.6 - 6.4\":\"rgb(217,38,35)\",\"6.4 - 7.2\":\"rgb(188,20,26)\",\"7.2 - 8\":\"rgb(152,12,19)\"}}}",
+        "version": 1,
+        "visState": "{\"title\":\"IBU vs OG\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":10,\"colorSchema\":\"Reds\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"overwriteColor\":false,\"color\":\"#555\"}}],\"dimensions\":{\"x\":{\"accessor\":0,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"},\"y\":[{\"accessor\":2,\"format\":{\"id\":\"number\"},\"params\":{},\"aggType\":\"count\"}],\"series\":[{\"accessor\":1,\"format\":{\"id\":\"range\",\"params\":{\"id\":\"number\"}},\"params\":{},\"aggType\":\"range\"}]}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"range\",\"schema\":\"segment\",\"params\":{\"field\":\"ibu.avg\",\"ranges\":[{\"from\":0,\"to\":10},{\"from\":10,\"to\":20},{\"from\":20,\"to\":25},{\"from\":25,\"to\":30},{\"from\":30,\"to\":40},{\"from\":40,\"to\":50},{\"from\":50,\"to\":60},{\"from\":60}],\"customLabel\":\"IBU\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"range\",\"schema\":\"group\",\"params\":{\"field\":\"og.avg\",\"ranges\":[{\"from\":17,\"to\":null},{\"from\":16,\"to\":17},{\"from\":15,\"to\":16},{\"from\":14,\"to\":15},{\"from\":13,\"to\":14},{\"from\":12,\"to\":13},{\"from\":10,\"to\":12},{\"to\":10,\"from\":0}],\"customLabel\":\"OG\"}}]}"
+      },
+      "references": [
+        {
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "16e8c030-0182-11ea-b377-bfbc3ca49801",
-      "name": "panel_5",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzYsMV0=",
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "title": "Family",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"Family\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":10,\"maxFontSize\":25,\"showLabel\":false,\"metric\":{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"string\",\"params\":{}}},\"bucket\":{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"terms\",\"params\":{\"id\":\"string\",\"otherBucketLabel\":\"Other\",\"missingBucketLabel\":\"Missing\"}}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"family\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":10,\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Family\"}}]}"
+      },
+      "references": [
+        {
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "64c24150-0182-11ea-b377-bfbc3ca49801",
-      "name": "panel_6",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzcsMV0=",
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "title": "History",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"History\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":10,\"maxFontSize\":25,\"showLabel\":false,\"metric\":{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"string\",\"params\":{}}},\"bucket\":{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"terms\",\"params\":{\"id\":\"string\",\"otherBucketLabel\":\"Other\",\"missingBucketLabel\":\"Missing\"}}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"family_history\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":10,\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"\"}}]}"
+      },
+      "references": [
+        {
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "daa45dd0-0183-11ea-b377-bfbc3ca49801",
-      "name": "panel_7",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzgsMV0=",
+      "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "title": "Origin",
+        "uiStateJSON": "{}",
+        "version": 1,
+        "visState": "{\"title\":\"Origin\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":false,\"last_level\":false,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"origin\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":10,\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
+      },
+      "references": [
+        {
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "624ce400-0210-11ea-b900-1722e4fc2b91",
-      "name": "panel_8",
-      "type": "visualization"
-    },
-    {
-      "id": "da269220-020e-11ea-b900-1722e4fc2b91",
-      "name": "panel_9",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzksMV0=",
+      "attributes": {
+        "title": "SRM",
+        "visState": "{\"title\":\"SRM\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":40}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":16}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"number\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"number\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"srm.min\",\"customLabel\":\"min\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"srm.max\",\"customLabel\":\"max\"}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        }
+      },
+      "references": [
+        {
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern",
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "ccd09c50-020f-11ea-b900-1722e4fc2b91",
-      "name": "panel_10",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzExLDFd",
+      "attributes": {
+        "title": "IBU",
+        "visState": "{\"title\":\"IBU\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":120}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":16}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"number\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"number\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"ibu.min\",\"customLabel\":\"min\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"ibu.max\",\"customLabel\":\"max\"}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        }
+      },
+      "references": [
+        {
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern",
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
+    },
+    {
+      "id": "da269220-020e-11ea-b900-1722e4fc2b91",
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzEwLDFd",
+      "attributes": {
+        "title": "ABV %",
+        "visState": "{\"title\":\"ABV %\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":12}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":16}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"number\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"number\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"2\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"abv.min\",\"customLabel\":\"min\"}},{\"id\":\"1\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"abv.max\",\"customLabel\":\"max\"}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        }
+      },
+      "references": [
+        {
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern",
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "e2481ad0-0210-11ea-b900-1722e4fc2b91",
-      "name": "panel_11",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzEyLDFd",
+      "attributes": {
+        "title": "OG °P",
+        "visState": "{\"title\":\"OG °P\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":30}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":16}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"number\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"number\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"og.min\",\"customLabel\":\"min\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"og.max\",\"customLabel\":\"max\"}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        }
+      },
+      "references": [
+        {
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern",
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "13d3ab00-0211-11ea-b900-1722e4fc2b91",
-      "name": "panel_12",
-      "type": "visualization"
+      "type": "visualization",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzEzLDFd",
+      "attributes": {
+        "title": "FG °P",
+        "visState": "{\"title\":\"FG °P\",\"type\":\"metric\",\"params\":{\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"type\":\"range\",\"from\":0,\"to\":10}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":16}},\"dimensions\":{\"metrics\":[{\"type\":\"vis_dimension\",\"accessor\":0,\"format\":{\"id\":\"number\",\"params\":{}}},{\"type\":\"vis_dimension\",\"accessor\":1,\"format\":{\"id\":\"number\",\"params\":{}}}]},\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"min\",\"schema\":\"metric\",\"params\":{\"field\":\"fg.min\",\"customLabel\":\"min\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"max\",\"schema\":\"metric\",\"params\":{\"field\":\"fg.max\",\"customLabel\":\"max\"}}]}",
+        "uiStateJSON": "{}",
+        "description": "",
+        "version": 1,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        }
+      },
+      "references": [
+        {
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern",
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91"
+        }
+      ],
+      "migrationVersion": {
+        "visualization": "7.4.2"
+      }
     },
     {
       "id": "0a06f000-0072-11ea-932d-092d2997e124",
-      "name": "panel_13",
-      "type": "search"
-    }
-  ],
-  "type": "dashboard",
-  "updated_at": "2019-11-08T13:56:25.700Z",
-  "version": "WzYzLDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"dark mild\",\"language\":\"lucene\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "Tags",
-    "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
-    "version": 1,
-    "visState": "{\"title\":\"Tags\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":true,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"tags\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\"}}]}"
-  },
-  "id": "b1ce2800-006b-11ea-932d-092d2997e124",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T09:18:24.994Z",
-  "version": "WzEzLDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
-    },
-    "title": "Origin Tags",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"Origin Tags\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":10,\"maxFontSize\":25,\"showLabel\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"origin\",\"orderBy\":\"1\",\"order\":\"desc\",\"size\":7,\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Origin\"}}]}"
-  },
-  "id": "45923f10-0182-11ea-b377-bfbc3ca49801",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
-      "type": "index-pattern"
-    }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T09:18:24.994Z",
-  "version": "WzE0LDFd"
-},
-{
-  "attributes": {
-    "description": "",
-    "kibanaSavedObjectMeta": {
-      "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"kuery\"},\"filter\":[]}"
-    },
-    "title": "control",
-    "uiStateJSON": "{}",
-    "version": 1,
-    "visState": "{\"title\":\"control\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1573206692655\",\"fieldName\":\"abv.min\",\"parent\":\"\",\"label\":\"ABV\",\"type\":\"range\",\"options\":{\"decimalPlaces\":1,\"step\":1},\"indexPatternRefName\":\"control_0_index_pattern\"},{\"id\":\"1573206729965\",\"fieldName\":\"ibu.avg\",\"parent\":\"\",\"label\":\"IBU\",\"type\":\"range\",\"options\":{\"decimalPlaces\":1,\"step\":1},\"indexPatternRefName\":\"control_1_index_pattern\"}],\"updateFiltersOnChange\":false,\"useTimeFilter\":false,\"pinFilters\":false},\"aggs\":[]}"
-  },
-  "id": "9212d6c0-020d-11ea-b900-1722e4fc2b91",
-  "migrationVersion": {
-    "visualization": "7.4.2"
-  },
-  "references": [
-    {
-      "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "control_0_index_pattern",
-      "type": "index-pattern"
+      "type": "search",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzE0LDFd",
+      "attributes": {
+        "columns": [
+          "subcategory",
+          "srm.avg",
+          "abv.avg",
+          "ibu.avg",
+          "og.avg",
+          "fg.avg",
+          "vital"
+        ],
+        "description": "",
+        "hits": 0,
+        "kibanaSavedObjectMeta": {
+          "searchSourceJSON": "{\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"kuery\",\"query\":\"\"},\"filter\":[],\"indexRefName\":\"kibanaSavedObjectMeta.searchSourceJSON.index\"}"
+        },
+        "sort": [
+          [
+            "fg.avg",
+            "desc"
+          ]
+        ],
+        "title": "Search",
+        "version": 1
+      },
+      "references": [
+        {
+          "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
+          "name": "kibanaSavedObjectMeta.searchSourceJSON.index",
+          "type": "index-pattern"
+        }
+      ],
+      "migrationVersion": {
+        "search": "7.4.0"
+      }
     },
     {
       "id": "6a99f510-0208-11ea-b900-1722e4fc2b91",
-      "name": "control_1_index_pattern",
-      "type": "index-pattern"
+      "type": "index-pattern",
+      "updated_at": "2019-11-11T11:26:04.561Z",
+      "version": "WzE1LDFd",
+      "attributes": {
+        "fields": "[{\"name\":\"_id\",\"type\":\"string\",\"esTypes\":[\"_id\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_index\",\"type\":\"string\",\"esTypes\":[\"_index\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"_score\",\"type\":\"number\",\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_source\",\"type\":\"_source\",\"esTypes\":[\"_source\"],\"count\":0,\"scripted\":false,\"searchable\":false,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"_type\",\"type\":\"string\",\"esTypes\":[\"_type\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":false},{\"name\":\"abv.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"abv.max\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"abv.min\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"all_field\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"appearance\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"aroma\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"ibu.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"ibu.max\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"ibu.min\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"characteristic_ingredients\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"srm.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"srm.max\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"srm.min\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"comments\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"commercial_examples\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"entry_instructions\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"family\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"family_history\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"flavor\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"history\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"id\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"ingredients\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"mouthfeel\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"name\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"notes\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"origin\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"og.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"og.max\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"og.min\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"overall_impression\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"style\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"style_comparison\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false},{\"name\":\"subcategory\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"tags\",\"type\":\"string\",\"esTypes\":[\"keyword\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"fg.avg\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"fg.max\",\"type\":\"number\",\"esTypes\":[\"long\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"fg.min\",\"type\":\"number\",\"esTypes\":[\"float\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":true,\"readFromDocValues\":true},{\"name\":\"vital\",\"type\":\"string\",\"esTypes\":[\"text\"],\"count\":0,\"scripted\":false,\"searchable\":true,\"aggregatable\":false,\"readFromDocValues\":false}]",
+        "title": "bjcp*"
+      },
+      "references": [],
+      "migrationVersion": {
+        "index-pattern": "6.5.0"
+      }
     }
-  ],
-  "type": "visualization",
-  "updated_at": "2019-11-08T09:53:09.676Z",
-  "version": "WzIxLDFd"
+  ]
 }
-  ]}

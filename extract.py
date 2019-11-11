@@ -15,7 +15,7 @@ def dump(id, sub):
         calc_avg(sub, 'alcohol', 'abv')
         calc_avg(sub, 'bitterness', 'ibu')
         calc_avg(sub, 'color', 'srm')
-        sub['vital'] = "IBU: {}-{}, ABV: {}-{}, SRM: {}-{}, OG: {}-{}, FG: {}-{}".format(sub["ibu"]["min"], sub["ibu"]["max"], sub["abv"]["min"], sub["abv"]["max"], sub["srm"]["min"], sub["srm"]["max"], sub["og"]["min"], sub["og"]["max"], sub["fg"]["min"], sub["fg"]["max"])
+        sub['vital'] = "SRM: {}-{}, IBU: {}-{}, OG: {}-{}, FG: {}-{}, ABV: {}-{}".format(sub["srm"]["min"], sub["srm"]["max"], sub["ibu"]["min"], sub["ibu"]["max"], sub["og"]["min"], sub["og"]["max"], sub["fg"]["min"], sub["fg"]["max"], sub["abv"]["min"], sub["abv"]["max"])
         del sub['vital_statistics']
     if sub.get('color_classifications'):
         del sub['color_classifications']
