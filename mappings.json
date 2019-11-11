@@ -7,17 +7,20 @@
     "appearance": {
       "type": "text",
       "copy_to": "all_field",
-      "analyzer": "fulltext"
+      "analyzer": "fulltext",
+      "fielddata": true
     },
     "aroma": {
       "type": "text",
       "copy_to": "all_field",
-      "analyzer": "fulltext"
+      "analyzer": "fulltext",
+      "fielddata": true
     },
     "characteristic_ingredients": {
       "type": "text",
       "copy_to": "all_field",
-      "analyzer": "fulltext"
+      "analyzer": "fulltext",
+      "fielddata": true
     },
     "comments": {
       "type": "text",
@@ -44,7 +47,8 @@
     "flavor": {
       "type": "text",
       "analyzer": "fulltext",
-      "copy_to": "all_field"
+      "copy_to": "all_field",
+      "fielddata": true
     },
     "history": {
       "type": "text",
@@ -58,12 +62,14 @@
     "ingredients": {
       "type": "text",
       "analyzer": "fulltext",
-      "copy_to": "all_field"
+      "copy_to": "all_field",
+      "fielddata": true
     },
     "mouthfeel": {
       "type": "text",
       "analyzer": "fulltext",
-      "copy_to": "all_field"
+      "copy_to": "all_field",
+      "fielddata": true
     },
     "name": {
       "type": "keyword",
@@ -81,7 +87,8 @@
     "overall_impression": {
       "type": "text",
       "analyzer": "fulltext",
-      "copy_to": "all_field"
+      "copy_to": "all_field",
+      "fielddata": true
     },
     "style": {
       "type": "keyword",
@@ -90,7 +97,8 @@
     "style_comparison": {
       "type": "text",
       "analyzer": "fulltext",
-      "copy_to": "all_field"
+      "copy_to": "all_field",
+      "fielddata": true
     },
     "vital": {
       "type": "text",
