@@ -18,10 +18,13 @@ The default dashboard with 124 Sub categories of beer:
 ![BJCP Analytics](./bjcp-analytics.png)
 
 Filtering on the Stout family:
-![BJCP Analytics](./bjcp-analytics-filter.png)
+![BJCP Analytics filter](./bjcp-analytics-filter.png)
 
 Searching for a beer with citrus aroma and low bitterness:
-![BJCP Analytics](./bjcp-analytics-search.png)
+![BJCP Analytics search](./bjcp-analytics-search.png)
+
+Significant terms for Scottish beers, these are the unusual terms used for the selected beers compared to the others. 
+![BJCP Analytics significant terms](./bjcp-analytics-significant-terms.png)
 
 ## Installation
 
