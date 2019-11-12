@@ -26,7 +26,7 @@ Filtering on the Stout family:
 Searching for a beer with citrus aroma and low bitterness:
 ![BJCP Analytics search](./bjcp-analytics-search.png)
 
-Significant terms for Scottish beers:
+Unusual terms for Belgian beers (See below to understand what is an Unusual term)
 ![BJCP Analytics significant terms](./bjcp-analytics-significant-terms.png)
 
 ## Installation
@@ -107,7 +107,10 @@ You can use sliders to filter SRM, IBU, OG or ABV range.
 
 You can filter using any selectable cloud tags.
 
-The significant terms cloud are the unusual terms used for the selected beers (the result list) compared to the entire Guide.
+The ["Unusual terms"](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-aggregations-bucket-significantterms-aggregation.html) aggregations show interesting or unusual occurrences of terms in the beer result set.
+
+Theses terms can be characteristics or **not appropriate** characteristics for the result set,
+you need to read carefully the guideline to understand the context.
 
 ### Stop and restart the stack
 
