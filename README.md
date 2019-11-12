@@ -9,6 +9,8 @@ with the following copyright:
 
 This repository uses the content of the 2015 BJCP Style Guide only as a personal **educational** purpose.
 
+The BJCP data or any derivative output are protected by the BJCP Copyright and should not be marketed for profit or integrated or embedded in websites without the BJCP agreement.
+
 The most current version of the BCJP Style Guide can be found on the [BJCP web site](https://www.bjcp.org/).
 
 ELK is a stack composed of [Elasticsearch](https://www.elastic.co/products/elastic-stack) and [Kibana](https://www.elastic.co/products/kibana) that provides at-a-glance insights into the Style Guide and enables you to drill down into details.
