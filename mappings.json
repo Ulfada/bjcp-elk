@@ -107,7 +107,13 @@
     },
     "subcategory": {
       "type": "keyword",
-      "copy_to": "all_field"
+      "copy_to": "all_field",
+      "fields": {
+        "fulltext": {
+          "type": "text",
+          "analyzer": "fulltext"
+        }
+      }
     },
     "tags": {
       "type": "keyword",

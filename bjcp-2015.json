@@ -3854,6 +3854,7 @@
           {
             "name": "Belgian IPA",
             "id": "21B1",
+            "origin": ["United States","Belgium"],
             "family": "IPA",
             "overall_impression": "An IPA with the fruitiness and spiciness derived from the use of Belgian yeast. The examples from Belgium tend to be lighter in color and more attenuated, similar to a tripel that has been brewed with more hops. This beer has a more complex flavor profile and may be higher in alcohol than a typical IPA.",
             "aroma": "Moderate to high hop aroma, often tropical, stone fruit, citrus or pine-like typical of American or New World hop varieties. Floral and spicy aromas are also found indicating European hops. Grassy aroma due to dry hopping may be present. Gentle, grainy-sweet malt aroma, with little to no caramel. Fruity esters are moderate to high and may include aromas of bananas, pears and apples. Light clove-like phenols may be noticeable. Belgian candi sugar-like aromas are sometimes present.",
@@ -3909,6 +3910,7 @@
           {
             "name": "Black IPA",
             "id": "21B2",
+            "origin": "United States",
             "family": "IPA",
             "family_history": "American Bitter Beer",
             "overall_impression": "A beer with the dryness, hop-forward balance, and flavor characteristics of an American IPA, only darker in color – but without strongly roasted or burnt flavors. The flavor of darker malts is gentle and supportive, not a major flavor component. Drinkability is a key characteristic.",
@@ -3964,6 +3966,7 @@
           {
             "name": "Brown IPA",
             "id": "21B3",
+            "origin": "United States",
             "family": "IPA",
             "overall_impression": "Hoppy, bitter, and moderately strong like an American IPA, but with some caramel, chocolate, toffee, and/or dark fruit malt character as in an American Brown Ale. Retaining the dryish finish and lean body that makes IPAs so drinkable, a Brown IPA is a little more flavorful and malty than an American IPA without being sweet or heavy.",
             "aroma": "A moderate to moderately-strong fresh hop aroma featuring one or more characteristics of American or New World hops, such as tropical fruit, stone fruit, citrus, floral, spicy, berry, melon, pine, resinous, etc. Many versions are dry hopped and can have an additional fresh hop aroma; this is desirable but not required. Grassiness should be minimal, if present. A medium-low to medium malty-sweet aroma mixes in well with the hop selection, and often features chocolate, nuts, dark caramel, toffee, toasted bread, and/or dark fruit character. Fruitiness from yeast may also be detected in some versions, although a neutral fermentation character is also acceptable. A restrained alcohol note may be present, but this character should be minimal at best. Any American or New World hop character is acceptable; new hop varieties continue to be released and should not constrain this style.",
@@ -4017,6 +4020,7 @@
           {
             "name": "Red IPA",
             "id": "21B4",
+            "origin": "United States",
             "family": "IPA",
             "family_history": "American Bitter Beer",
             "overall_impression": "Hoppy, bitter, and moderately strong like an American IPA, but with some caramel, toffee, and/or dark fruit malt character. Retaining the dryish finish and lean body that makes IPAs so drinkable, a Red IPA is a little more flavorful and malty than an American IPA without being sweet or heavy.",
@@ -4072,6 +4076,7 @@
           {
             "name": "Rye IPA",
             "id": "21B5",
+            "origin": "United States",
             "family": "IPA",
             "family_history": "American Bitter Beer",
             "overall_impression": "A decidedly hoppy and bitter, moderately strong American pale ale, showcasing modern American and New World hop varieties and rye malt. The balance is hop-forward, with a clean fermentation profile, dry finish, and clean, supporting malt allowing a creative range of hop character to shine through.",
@@ -4127,6 +4132,7 @@
           {
             "name": "White IPA",
             "id": "21B6",
+            "origin": "United States",
             "family": "IPA",
             "family_history": "American Bitter Beer",
             "overall_impression": "A fruity, spicy, refreshing version of an American IPA, but with a lighter color, less body, and featuring either the distinctive yeast and/or spice additions typical of a Belgian witbier.",
@@ -4182,6 +4188,7 @@
           {
             "name": "New England IPA",
             "id": "21B7",
+            "origin": "United States",
             "family": "IPA",
             "family_history": "American Bitter Beer",
             "overall_impression": "An American IPA with intense fruit flavors and aromas, a soft body, and smooth mouthfeel, and often opaque with substantial haze. Less perceived bitterness than traditional IPAs but always massively hop forward. This emphasis on late hopping, especially dry hopping, with hops with tropical fruit qualities lends the specific ‘juicy’ character for which this style is known.",

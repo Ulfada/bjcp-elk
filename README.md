@@ -1,14 +1,15 @@
 # BJCP-ELK Basic analytics on the Beer Judge Certification Program Style Guide
 
-BJCP is the [Beer Judge Certification Program](https://bjcp.org/), that among other things produces a beer style guidelines.
+BJCP is the [Beer Judge Certification Program](https://bjcp.org/), that among other things produces a Beer Style Guidelines
+with the following copyright:
 
 > The BJCP grants the right to make copies of the Style Guide for use in
 > BJCP-sanctioned competitions or for educational/judge training purposes.
 > All other rights reserved.
 
-This repository uses the content of the 2015 BJCP Style Guide only as an educational/training and personal purposes.
+This repository uses the content of the 2015 BJCP Style Guide only as a personal **educational** purpose.
 
-The original 2015 BJCP Style Guide reference can be found on https://www.bjcp.org/.
+The most current version of the BCJP Style Guide can be found on the [BJCP web site](https://www.bjcp.org/).
 
 ELK is a stack composed of [Elasticsearch](https://www.elastic.co/products/elastic-stack) and [Kibana](https://www.elastic.co/products/kibana) that provides at-a-glance insights into the Style Guide and enables you to drill down into details.
 
@@ -23,12 +24,14 @@ Filtering on the Stout family:
 Searching for a beer with citrus aroma and low bitterness:
 ![BJCP Analytics search](./bjcp-analytics-search.png)
 
-Significant terms for Scottish beers, these are the unusual terms used for the selected beers compared to the others. 
+Significant terms for Scottish beers:
 ![BJCP Analytics significant terms](./bjcp-analytics-significant-terms.png)
 
 ## Installation
 
 ### Requirements
+
+For now the stack and scripts are tested only on Linux and Mac OS.
 
 You need to install: 
 - [docker](https://docs.docker.com/install/)
@@ -42,7 +45,7 @@ For Mac OS, you have to update your `/etc/hosts` and add the following lines:
 127.0.0.1 kibana.docker.localhost
 ```
 
-### Start the EK Stack
+### 1. Start the EK Stack
 
 Open a terminal and run:
 ```bash
@@ -58,7 +61,7 @@ elastic          | {"type": "server", "timestamp": "2019-11-08T09:06:08,264Z", "
 kibana           | {"type":"log","@timestamp":"2019-11-08T09:06:08Z","tags":["info","http","server","Kibana"],"pid":7,"message":"http server running at http://0:5601"
 ```
 
-### Import the BJCP Style Guide and the Dashboard
+### 2. Import the BJCP Style Guide and Kibana Dashboard
 
 When the stack is started, run the `install.sh` script: 
 
@@ -75,10 +78,38 @@ You should have:
       
 ## Usage
 
-Once the installation is done you have access to the BJCP Dashboard:
+Once the installation is done you have access to the `bjcp` Dashboard:
 - http://kibana.docker.localhost/app/kibana#/dashboards
- 
- 
+
+### Searching and filtering
+
+You can enter search query in KQL ([Kibana Query Language](https://www.elastic.co/guide/en/kibana/7.4/kuery-query.html)).
+
+Here are some examples:
+- Search for subcategories:
+  - ```id: 7B```
+  - ```id: 22A```
+- Search for a style:
+  - ```style: "07"```
+  - ```style: "17"```
+- Fulltext search on `subcategory`:
+  - ```subcategory.fulltext: lager```
+- Fulltext search on `aroma`, `appearance`, `flavor`, `mouthfeel` or `overall_impression` fields:
+  - ```flavor: burnt```
+  - ```aroma: resinous```
+- Fulltext search on all fields:
+  - ```Ch'Ti```
+
+
+You can use sliders to filter SRM, IBU, OG or ABV range.
+
+You can filter using any selectable cloud tags.
+
+The significant terms cloud are the unusual terms used for the selected beers (the result list) compared to the entire Guide.
+
+### Stop and restart the stack
+
+You need to run the `docker-compose` command from the directory
 The docker compose stack can be stop:
 ```bash
 docker-compose down --volume
@@ -95,18 +126,20 @@ The Dashboard is persisted on the `./data` directory so you can customize the da
 
 ### About the data
 
-The 2015 BJCP Style Guide has been turned into a JSON version and augmented with few metadata:
+The 2015 BJCP Style Guide has been turned into a JSON version along with the following metadata:
 
 - `origin`: as described in [Styles Sorted Using Country of Origin](https://dev.bjcp.org/beer-styles/4-styles-sorted-using-country-of-origin/)
 - `family`: as described in [Styles Sorted Using Style Family](https://dev.bjcp.org/beer-styles/3-styles-sorted-using-style-family/)
 - `family_history`: as described in [Styles Sorted Using History](https://dev.bjcp.org/beer-styles/5-styles-sorted-using-history/) 
 
+
 The original and terminal extract are in Plato instead of SG. 
+
 
 For now only the subcategories are injected into Elasticsearch, some fields are added:
 
 - vital statistics averages: `abv.avg`, `og.avg`, `fg.avg`, `ibu.avg`, `srm.avg`
-- subcategory names are prefixed with id formatted in sortable way (i.e 1A is rewritten as 01A) 
+- subcategory names are prefixed with identifier formatted in sortable way (i.e `1A` is rewritten as `01A`)
 
  
 ### Extract data from JSON to Elasticsearch bulk format
@@ -114,6 +147,11 @@ For now only the subcategories are injected into Elasticsearch, some fields are 
 Run the python script to generate the `bjcp-es.json` file: 
 ```bash    
 ./extract.py > ./bjcp-es.json
+```
+
+Note that if you want the gravity in SG instead of Plato you can edit the `extract.py` file and set:
+```python
+USE_SG = True
 ```
 
 ### Export/import the Kibana dashboard
