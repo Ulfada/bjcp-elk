@@ -195,6 +195,19 @@
           "type": "float"
         }
       }
+    },
+    "bugu": {
+      "properties": {
+        "avg": {
+          "type": "float"
+        },
+        "max": {
+          "type": "long"
+        },
+        "min": {
+          "type": "float"
+        }
+      }
     }
   }
 }

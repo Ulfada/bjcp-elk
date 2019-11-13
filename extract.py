@@ -22,15 +22,20 @@ def dump(sid, style, sub):
     if sub.get('vital_statistics'):
         calc_avg(sub, 'original_extract', 'og')
         calc_avg(sub, 'terminal_extract', 'fg')
-        if USE_SG:
-            convert_to_sg(sub, 'og')
-            convert_to_sg(sub, 'fg')
         calc_avg(sub, 'alcohol', 'abv')
         calc_avg(sub, 'bitterness', 'ibu')
         calc_avg(sub, 'color', 'srm')
-        sub['vital'] = "SRM: {:,}-{:,}, IBU: {:,}-{:,}, OG: {:,}-{:,}, FG: {:,}-{:,}, ABV: {:,}-{:,}".format(
+        sub['bugu'] = {'min': bu_gu_ratio(float(sub['ibu']['min']), float(sub['og']['min'])),
+                       'avg': bu_gu_ratio(float(sub['ibu']['avg']), float(sub['og']['avg'])),
+                       'max': bu_gu_ratio(float(sub['ibu']['max']), float(sub['og']['max']))}
+        if USE_SG:
+            convert_to_sg(sub, 'og')
+            convert_to_sg(sub, 'fg')
+        sub[
+            'vital'] = "SRM: {:,}-{:,}, IBU: {:,}-{:,}, OG: {:,}-{:,}, FG: {:,}-{:,}, ABV: {:,}-{:,}, BU:GU: {:,}-{:,}".format(
             sub["srm"]["min"], sub["srm"]["max"], sub["ibu"]["min"], sub["ibu"]["max"], sub["og"]["min"],
-            sub["og"]["max"], sub["fg"]["min"], sub["fg"]["max"], sub["abv"]["min"], sub["abv"]["max"])
+            sub["og"]["max"], sub["fg"]["min"], sub["fg"]["max"], sub["abv"]["min"], sub["abv"]["max"],
+            sub["bugu"]["min"], sub["bugu"]["max"])
         del sub['vital_statistics']
     if sub.get('color_classifications'):
         del sub['color_classifications']
@@ -58,6 +63,14 @@ def convert_to_sg(sub, item):
 
 def plato_to_sg(plato):
     return int(round(1000 * (1 + (plato / (258.6 - ((plato / 258.2) * 227.1))))))
+
+
+def plato_to_gu(plato):
+    return int(round(1000 * (plato / (258.6 - ((plato / 258.2) * 227.1)))))
+
+
+def bu_gu_ratio(ibu, plato):
+    return float(format(ibu / plato_to_gu(plato), '.2f'))
 
 
 def parse(filename):
