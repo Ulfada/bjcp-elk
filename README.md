@@ -23,7 +23,7 @@ The default dashboard with 124 Sub categories of beer:
 Filtering on the Stout family:
 ![BJCP Analytics filter](./bjcp-analytics-filter.png)
 
-Searching for a beer with citrus aroma and low bitterness:
+Searching for an amber/dark lager with low alcohol:
 ![BJCP Analytics search](./bjcp-analytics-search.png)
 
 Unusual terms for Belgian beers (See below to understand what is an Unusual term)
@@ -109,7 +109,7 @@ Here are some examples:
   - ```Ch'Ti```
 
 
-You can use sliders to filter SRM, IBU, OG or ABV range.
+You can use sliders to filter SRM, IBU, OG, FG or ABV range.
 
 You can filter using any selectable cloud tags.
 
