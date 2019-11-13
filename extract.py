@@ -7,8 +7,13 @@ USE_SG = False
 BJCP_GUIDE_JSON = 'bjcp-2015.json'
 
 
-def dump(sid, sub):
-    sub['style'] = sid
+def dump(sid, style, sub):
+    sub['style_id'] = sid
+    sub['style'] = style
+    try:
+        sub['style_num'] = int(sid)
+    except ValueError:
+        sub['style_num'] = 99
     sub_id = sub['id']
     if sub_id[0].isdigit() and sub_id[1].isalpha():
         sub['subcategory'] = "0" + sub['id'] + " " + sub['name']
@@ -33,7 +38,7 @@ def dump(sid, sub):
         del sub['strength_classifications']
     if sub.get('styles'):
         for sub_sub in sub['styles']:
-            dump(sid, sub_sub)
+            dump(sid, style, sub_sub)
     else:
         print('{"index":{}}')
         print(json.dumps(sub))
@@ -55,17 +60,13 @@ def plato_to_sg(plato):
     return int(round(1000 * (1 + (plato / (258.6 - ((plato / 258.2) * 227.1))))))
 
 
-def parse(file):
-    with open(file) as json_file:
+def parse(filename):
+    with open(filename) as json_file:
         data = json.load(json_file)
         for style in data:
-            try:
-                sid = format(int(style['id']), '02d')
-            except ValueError:
-                sid = style['id']
             # print(id + ' Name: ' + style['name'])
             for sub in style['subcategories']:
-                dump(sid, sub)
+                dump(style['id'], style['name'], sub)
 
 
 parse(BJCP_GUIDE_JSON)

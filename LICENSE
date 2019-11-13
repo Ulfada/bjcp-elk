@@ -1,4 +1,19 @@
-                    GNU GENERAL PUBLIC LICENSE
+The BJCP data (2015 BJCP Style Guide) and any derivative output are
+protected by the BJCP Copyright and should not be marketed for profit
+or integrated or embedded in websites without the BJCP agreement.
+
+         Copyright © 2015, BJCP, Inc.
+
+The BJCP grants the right to make copies for use in
+BJCP-sanctioned competitions or for educational/judge training
+purposes. All other rights reserved.
+Updates available at www.bjcp.org.
+
+
+-----------------------------------------------------------------------
+The scripts and configuration files are under GPL v3:
+
+         GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
  Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>

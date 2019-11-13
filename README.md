@@ -88,12 +88,18 @@ Once the installation is done you have access to the `bjcp` Dashboard:
 You can enter search query in KQL ([Kibana Query Language](https://www.elastic.co/guide/en/kibana/7.4/kuery-query.html)).
 
 Here are some examples:
+- Search for exact style identifier
+  - ```style_id: X```
+  - ```style_id: 7```
+- Search for style ranges
+  - ```style_num <= 27```
+  - ```style_num > 10 and style_num: 27```
+  - ```not style: 2```
+- Fulltext search on style name
+  - ```style.fulltext: (porter OR stout OR brown)```
 - Search for subcategories:
   - ```id: 7B```
   - ```id: 22A```
-- Search for a style:
-  - ```style: "07"```
-  - ```style: "17"```
 - Fulltext search on `subcategory`:
   - ```subcategory.fulltext: lager```
 - Fulltext search on `aroma`, `appearance`, `flavor`, `mouthfeel` or `overall_impression` fields:
