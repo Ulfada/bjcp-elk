@@ -150,10 +150,10 @@
           "type": "float"
         },
         "max": {
-          "type": "long"
+          "type": "float"
         },
         "min": {
-          "type": "long"
+          "type": "float"
         }
       }
     },
@@ -163,10 +163,10 @@
           "type": "float"
         },
         "max": {
-          "type": "long"
+          "type": "float"
         },
         "min": {
-          "type": "long"
+          "type": "float"
         }
       }
     },
@@ -176,10 +176,10 @@
           "type": "float"
         },
         "max": {
-          "type": "long"
+          "type": "float"
         },
         "min": {
-          "type": "long"
+          "type": "float"
         }
       }
     },
@@ -189,7 +189,7 @@
           "type": "float"
         },
         "max": {
-          "type": "long"
+          "type": "float"
         },
         "min": {
           "type": "float"
@@ -202,12 +202,16 @@
           "type": "float"
         },
         "max": {
-          "type": "long"
+          "type": "float"
         },
         "min": {
           "type": "float"
         }
       }
+    },
+    "vector": {
+      "type": "dense_vector",
+      "dims": 5
     }
   }
 }

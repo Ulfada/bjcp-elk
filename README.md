@@ -133,6 +133,63 @@ docker-compose up -d
 
 The Dashboard is persisted on the `./data` directory so you can customize the dashboard.
 
+### Advanced search
+
+Warning: this is very experimental, do not try to get any conclusion at this stage. 
+
+Using Elasticsearch 7.4 (non oss version :/) it is possible to use `dense_vector` field type and express vital statistic as a vector.
+
+For instance, for `26D Belgian Dark Strong Ale` we have
+- `srm.avg`: 17
+- `ibu.avg`: 27.5
+- `og.avg`: 22
+- `fg.avg`: 4.3
+- `abv.avg`: 7.9
+
+Which can transform this into a normalized vector:
+`[0.4461538461538462, 0.2647058823529412, 0.9006211180124223, 0.5384615384615384, 0.8260869565217392]`
+
+Then we can use the `l2norm` function to calculate L2 distance (Euclidean distance) between the given vector and document vectors.
+using this as ranking score gives beers with similiraties vital characteristics: 
+```
+curl -s -X POST 'elastic.docker.localhost/bjcp/_search?pretty' -H 'Content-Type: application/json' -d'{
+  "query": {
+    "script_score": {
+      "query": {
+        "exists": {
+          "field": "vector"
+        }
+      },
+      "script": {
+        "source": "1 / (1 + l2norm(params.query_vector, doc[\u0027vector\u0027]))",
+        "params": {
+          "query_vector": [0.4461538461538462, 0.2647058823529412, 0.9006211180124223, 0.5384615384615384, 0.8260869565217392]
+        }
+      }
+    }
+  },
+  "size": 5,
+  "_source": {
+    "includes": [
+      "_id",
+      "vector",
+      "vital_avg",
+      "subcategory"
+    ],
+    "excludes": []
+  }
+}'
+```
+The results is something like this:
+
+| _score | subcategory | Vital average |
+| ---: | --- | --- |
+| 1.0 | 26D Belgian Dark Strong Ale | SRM: 17.0, IBU: 27.5, OG: 22.0, FG: 4.3, ABV: 7.9, BU:GU: 0.3|
+| 0.81939876|09A Doppelbock | SRM: 15.5, IBU: 21.0, OG: 21.9, FG: 5.1, ABV: 6.8, BU:GU: 0.23|
+| 0.7872062|27A9 Sahti | SRM: 13.0, IBU: 11.0, OG: 23.1, FG: 4.6, ABV: 7.1, BU:GU: 0.11 |
+| 0.74702775|10C Weizenbock | SRM: 15.5, IBU: 22.5, OG: 18.6, FG: 4.7, ABV: 6.2, BU:GU: 0.29|
+| 0.7319172|22D Wheatwine| SRM: 11.5, IBU: 45.0, OG: 23.6, FG: 5.8, ABV: 7.9, BU:GU: 0.45|
+
 ## Dev
 
 ### About the data
@@ -150,8 +207,9 @@ The original and terminal extract are in Plato instead of SG.
 For now only the subcategories are injected into Elasticsearch, some fields are added:
 
 - vital statistics averages: `abv.avg`, `og.avg`, `fg.avg`, `ibu.avg`, `srm.avg`
+- the BU:GU ratio: `bugu` which is IBU divided by the OG exprimed in gravity unit (for instance OG: 10°P = 1.040 SG = 40 GU) 
 - subcategory names are prefixed with identifier formatted in sortable way (i.e `1A` is rewritten as `01A`)
-
+- vital statistics are also stored as a normalized (value between 0 and 1) vector [srm, ibu, og, fg, abv] to help to find similarities
  
 ### Extract data from JSON to Elasticsearch bulk format
 
